@@ -1,0 +1,175 @@
+body{
+    background-image: url(https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+p{
+    color: rgb(247, 31, 31);
+}
+.p1{
+    margin-left: 120px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -20px;
+
+}
+
+h2{
+     color:  gold;
+}
+.png{
+    
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    margin-left: -840px;
+    margin-top: -70px;
+    font-size: 40px;
+    font-style: oblique;
+    color: #fff;
+
+}
+.main ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+.nav li{
+    display: inline-block;
+}
+.nav a{
+    position: relative;
+    width: 160px;
+    display: block;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    font-style: inherit;
+  background-color: black;
+    border-radius: 35%;
+    font-size: 18px;
+    z-index: 1;
+
+
+}
+
+.nav ul {
+    
+   margin-top: 70px;
+   margin-left: 100px;
+
+}
+
+.box{
+    margin-top: 200px;
+}
+
+a:after {
+    content:"";
+    position: absolute;
+    background-color: rgb(255, 25, 25);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    
+}
+
+a:hover:after{
+    width: 100%;
+
+}
+
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    color: black;
+    position: fixed;
+}
+
+
+
+.snow_wrap{
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center bottom; 
+	overflow: hidden;
+	position: relative;
+}
+
+.snow, .snow:before, .snow:after {
+  position: absolute;
+  top: -650px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: 
+  radial-gradient(4px 4px at 100px 50px, #fff , transparent), 
+  radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
+  radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
+  background-size: 650px 650px;
+  animation: snow 3s linear infinite;
+  content: "";
+}
+
+.snow:after {
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-duration: 6s;
+  animation-direction: reverse;
+}
+
+.snow:before {
+	margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-duration: 9s;
+  animation-direction: reverse;
+}
+
+@keyframes snow {
+  to {
+    transform: translateY(650px);
+  }
+}
+
+.icon a {
+    color: orange;
+}
+
+.icon a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    text-decoration: none;
+}
